@@ -54,7 +54,7 @@ def get_data():
     data_2, labels_2, subjects_2 = [], [], []
     data_3, labels_3, subjects_3 = [], [], []
 
-    data_1, labels_1, subjects_1, data_2, labels_2, subjects_2, data_3, labels_3, subjects_3 = read_msr_data(config.DATA_DIR, data_1, labels_1, subjects_1, data_2, labels_2, subjects_2, data_3, labels_3, subjects_3)
+    data_1, labels_1, subjects_1, data_2, labels_2, subjects_2, data_3, labels_3, subjects_3 = read_msr_data(config.MSR_DATA_DIR, data_1, labels_1, subjects_1, data_2, labels_2, subjects_2, data_3, labels_3, subjects_3)
 
     labels_1 = augment_labels(labels=labels_1)
     labels_2 = augment_labels(labels=labels_2)
