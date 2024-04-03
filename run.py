@@ -7,6 +7,7 @@ import copy
 import main
 import config
 import data_utils
+from algorithms import segment_distance_normalization
 from trainers import statistical_moments_trainers, window_division_trainers, dtw_trainers, skelemotion_trainers
 import utils
 import config
@@ -146,6 +147,9 @@ class EnsembleTrial():
       return max_accuracy
 
 data_use, labels_use, subjects_use = main.get_data()
+
+if config.APPLY_SEGMENT_DISTANCE_NORMALIZATION:
+  segment_distance_normalization.get_avg_dist(data_use)
 
 num_trials = 10
 avg_accuracy = 0
