@@ -61,15 +61,15 @@ def statistical_moments_aggregation(sequence):
     mean_feature_vector = []
 
     x_rep, y_rep, z_rep = aggregate_dim_sequence_statistical_moments(dim_sequence_x), aggregate_dim_sequence_statistical_moments(dim_sequence_y), aggregate_dim_sequence_statistical_moments(dim_sequence_z)
-    for i in range(len(config.tssi_order)):
+    for i in range(len(utils.tssi_order)):
       mean_feature_vector.extend([x_rep[i], x_rep[2*i], x_rep[3*i], x_rep[4*i]])
-    for i in range(len(config.tssi_order)):
+    for i in range(len(utils.tssi_order)):
       mean_feature_vector.extend([y_rep[i], y_rep[2*i], y_rep[3*i], y_rep[4*i]])
-    for i in range(len(config.tssi_order)):
+    for i in range(len(utils.tssi_order)):
       mean_feature_vector.extend([z_rep[i], z_rep[2*i], z_rep[3*i], z_rep[4*i]])
 
     angle_rep = aggregate_angle_sequence_statistical_moments(angle_sequence=angle_sequence)
-    for i in range(len(config.tssi_order)):
+    for i in range(len(utils.tssi_order)):
      mean_feature_vector.extend([angle_rep[i], angle_rep[2*i], angle_rep[3*i], angle_rep[4*i]])
 
     return np.array(mean_feature_vector)
