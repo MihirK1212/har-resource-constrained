@@ -5,8 +5,14 @@ action_set_3 = [5, 13, 14, 15, 16, 17, 18, 19]
 label_set = list(set(action_set_1 + action_set_2 + action_set_3))
 assert len(label_set) == 20
 
-MSR_DATA_DIR = './msraction3d'
-BEST_NN_MODEL_PATH = '/content/drive/My Drive/BTP/ensemble_best_nn_model_ksdflala.pt'
+MSR_ACTION_3D = 'msraction3d'
+URT_MHAD = 'utd_mhad'
+DATASET = MSR_ACTION_3D
+
+MSR_DATA_DIR = './msraction3d' 
+UTD_DATA_DIR = './utdmhad'
+BEST_NN_MODEL_PATH = '/content/drive/My Drive/BTP/ensemble_best_nn_model.pt'
+
 NUM_JOINTS = 20
 
 ACTION_SET = 2
@@ -51,3 +57,4 @@ X_TRAIN_KEY = 'X_train'
 X_TEST_KEY = 'X_test'
 Y_TRAIN_KEY = 'y_train'
 Y_TEST_KEY = 'y_test'
+
