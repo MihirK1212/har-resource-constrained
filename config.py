@@ -7,7 +7,7 @@ assert len(label_set) == 20
 
 MSR_ACTION_3D = 'msraction3d'
 URT_MHAD = 'utd_mhad'
-DATASET = MSR_ACTION_3D
+DATASET = URT_MHAD
 
 MSR_DATA_DIR = './msraction3d' 
 UTD_DATA_DIR = './utdmhad'
