@@ -10,7 +10,7 @@ URT_MHAD = 'utd_mhad'
 DATASET = URT_MHAD
 
 MSR_DATA_DIR = './msraction3d' 
-UTD_DATA_DIR = './utdmhad'
+UTD_DATA_DIR = './utd_mhad'
 BEST_NN_MODEL_PATH = '/content/drive/My Drive/BTP/ensemble_best_nn_model.pt'
 
 NUM_JOINTS = 20
